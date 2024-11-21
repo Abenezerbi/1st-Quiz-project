@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    color: black;
+}
+
+header, nav, footer {
+    text-align: center;
+    background-color: deepskyblue;
+    color: white;
+    padding: 20px;
+}
+
+header h1, header h2, header h3 {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid lightgray;
+}
+
+th {
+    background-color: deepskyblue;
+    color: white;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: deepskyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: dodgerblue;
+}
+
+/* CSS Animation */
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    animation: fadeInMove 2s ease-in-out infinite;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    body {
+        background-color: lightcyan;
+    }
+}
